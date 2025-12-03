@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Green Presentation Template</title>
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+ 
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'base-dark': '#0d1110',      
+                        'surface-dark': '#141a18',     
+                        'accent-green': '#4a7c59',     
+                        'accent-green-light': '#6fa07c',
+                        'text-grey': '#a7b0a8',       
+                        'section-line': '#1d2422'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: "Inter", sans-serif;
+        }
+
+        .content-box {
+            background-color: var(--tw-colors-surface-dark);
+            border: 1px solid var(--tw-colors-section-line);
+            border-radius: 0.8rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(5, 10, 8, 0.5);
+        }
+
+        .content-box-hover:hover {
+            border-color: var(--tw-colors-accent-green);
+            box-shadow: 0 4px 15px rgba(40, 65, 50, 0.4);
+            transform: translateY(-2px);
+        }
+    </style>
+
+</head>
+
+<body class="bg-base-dark text-gray-100 min-h-screen p-4 md:p-12">
+
+    <div class="max-w-7xl mx-auto space-y-6">
+
+        <!-- Header -->
+        <div class="content-box p-6 h-36 flex items-center justify-center border-accent-green">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-accent-green tracking-widest uppercase">
+            Comparative Study on Different Types of Computers</h1>
+        </div>
+
+
+        <!-- Box 1 -->
+        <div class="content-box content-box-hover p-8 h-100 flex flex-col items-center justify-center text-center">
+            <h2 class="text-3xl font-bold text-white mb-10">INTRODUCTION</h2>
+            <p class="text-text-grey text-lg max-w-3xl">
+            <BR>A computer is an electronic device capable of manipulating information and data. It can
+                store, retrieve, and process data, enabling users to perform various tasks. These tasks include
+                creating documents, sending emails, playing games, browsing the web, and editing or creating
+                spreadsheets, presentations, and videos.
+
+
+            </p>
+        </div>
+
+        <!--  Boxes 3 & 4 -->
+        <div class="flex gap-10">
+
+    
+            <!--  Box 3 -->
+            <div class="content-box content-box-hover p-10 h-100 flex flex-col items-center justify-center text-justified flex-1">
+                <h2 class="text-3xl font-bold text-white mb-10 text-center">HARDWARE</h2>
+                <p class="text-text-grey text-lg max-w-3xl text-justify">
+                refers to any physical component of a computer, such as the keyboard, mouse, or
+                internal parts shown in the image below</p>
+            </div>
+            
+            <!--  Box 4 -->
+            <div class="content-box content-box-hover p-10 h-100 flex flex-col items-center justify-center text-justified flex-1">
+                <h2 class="text-3xl font-bold text-white mb-10 text-center">SOFTWARE</h2>
+                <p class="text-text-grey text-lg max-w-3xl text-justify">
+                is a collection of instructions that dictate to the hardware what actions to perform and
+                how to execute them. Web browsers, games, and word processors are all examples of software.
+                </p>
+            </div>
+
+        </div>
+
+            <div class="content-box content-box-hover p-10 h-100 flex flex-col items-center justify-center text-justified flex-1">
+                <p class="text-text-grey text-lg max-w-3xl text-justify">
+                Every interaction you have with your computer relies on both hardware and software. For
+                instance, you are likely currently using a web browser (software) to view this lesson and your
+                mouse (hardware) to navigate between pages. As you delve into different computer types,
+                consider the variations in their hardware. You will discover throughout this tutorial that diverse
+                computer types frequently utilize distinct types of software as well.
+                </p>
+            </div>
+
+            <!--  Boxes 5 & 6  -->
+    
+        <div>
+    
+            <!--  Box 5 -->
+            <div class="content-box content-box-hover p-10 h-100 flex flex-col items-center justify-center text-justified flex-1">
+                <h2 class="text-3xl font-bold text-white mb-10 text-center">SUPER COMPUTER</h2>
+                <p class="text-text-grey text-lg max-w-3xl text-justify">
+                Supercomputer of any kind is an extremely high-functioning type of computer whose
+                system is available at any given time. Common uses of supercomputers are for high
+                mathematical computation and research.
+                Examples of its application are for predicting the weather patterns, nuclear creation,
+                mathematical models, and cryptology. The price for the supercomputers has significantly
+                declined, and many business have utilized
+
+                </p>
+            </div>
+            
+            <!--  Box 6 -->
+            <div class="content-box content-box-hover p-10 h-100 flex flex-col items-center justify-center text-justified flex-1">
+                <h2 class="text-3xl font-bold text-white mb-10 text-center">MAINFRANE COMPUTER</h2>
+                <p class="text-text-grey text-lg max-w-3xl text-justify">
+                Mainframe computers are known to be the “big iron” that operates on a larger scale and
+                processes huge amounts of data. It may be smaller that the supercomputer, but the mainframe
+                computer's aspects are excellent at high reliability, massive data processing, security, scalability,
+                asvirtualization, compatibility, longevity, and cost-effectiveness.
+                </p>
+            </div>
+    
+            <!-- Box 7 -->
+            <div class="content-box content-box-hover p-10 h-100 flex flex-col items-center justify-center text-justified flex-1">
+                <h2 class="text-3xl font-bold text-white mb-10 text-center">MINI COMPUTER</h2>
+                <p class="text-text-grey text-lg max-w-3xl text-justify">
+                Mini computers are computers sitting in between mainframe computers and
+                microcomputers. Minicomputers are used often in low- to mid-size businesses, research, and
+                managing files and data, as well as educational computers. Computers such as this are favored
+                amongst the general office and educational workforces for their robust capability, speed, cost,
+                and size.
+
+                </p>
+            </div>
+            
+            <!-- Box 8 -->
+            <div class="content-box content-box-hover p-10 h-100 flex flex-col items-center justify-center text-justified flex-1">
+                <h2 class="text-3xl font-bold text-white mb-10 text-center">SERVER</h2>
+                <p class="text-text-grey text-lg max-w-3xl text-justify">
+                A server is a powerful machine that computes and stores data and information throughout
+                the internet. A personal computer and any other computer can be used as a personal server,
+                which can act as a server that taps into the internet to collaborate and open websites. Servers are
+                capable of more than just basic computer functions. They manage intricate server processes,
+                including handling numerous user queries per second, hosting content-rich websites, establishing
+                shared drives for networked devices, and processing demanding workloads like database
+                transaction management, which requires substantial computing power.
+                </p>
+            </div>
+
+            <!-- Box 9 -->
+
+            </div>
+             <div class="content-box content-box-hover p-10 h-100 flex flex-col items-center justify-center text-justified flex-1">
+                <h2 class="text-3xl font-bold text-white mb-10 text-center">WORKSTATION</h2>
+                <p class="text-text-grey text-lg max-w-3xl text-justify">
+                A high-performance computer designed for demanding professional tasks like 3D
+                modeling, scientific research, or heavy video editing. Think of it as a regular PC, but much more
+                powerful.
+            </p>
+        </div>
+
+        <!-- Box 10 -->
+
+         </div>
+             <div class="content-box content-box-hover p-10 h-100 flex flex-col items-center justify-center text-justified flex-1">
+                <h2 class="text-3xl font-bold text-white mb-10 text-center">MICROCOMPUTER</h2>
+                <p class="text-text-grey text-lg max-w-3xl text-justify">
+                An older term for what we now just call a personal computer (PC)—like a desktop or
+                laptop. It was named "micro" because its main processor (CPU) is a single microprocessor chip.
+            </p>
+        </div>
+    </div>
+
+                <!-- box 11 -->
+        
+        <div class="content-box content-box-hover p-10 h-100 flex flex-col items-center justify-center text-justified flex-1">
+                <h2 class="text-3xl font-bold text-white mb-10">REFERENCES</h2>
+                <p class="text-text-grey text-lg max-w-3xl text-center">
+                Britannica. (2024). Microcomputer.<br>
+                Britannica. (2024). Minicomputer.<br>
+                Britannica. (2024). Supercomputer.<br>
+                Dell. (n.d.). CAD workstations - Computers for engineers & architects.<br>
+                GCFGlobal.org. (n.d.). What is a computer?<br>
+                GeeksforGeeks. (2024). What is a mainframe computer?<br>
+                HP. (n.d.). What is a workstation computer?<br>
+                IBM. (n.d.). What is a mainframe?<br>
+                IBM. (n.d.). What is supercomputing?<br>
+                Lenovo. (n.d.). What is a minicomputer?<br>
+                Lenovo. (n.d.). What is the workstation computer & how can it benefit you?<br>
+                Spiceworks. (2024). What is a server? Definition, types and how they work.<br>
+                TechTarget. (2023). What is a server?<br>
+                Wikipedia. (2024). Mainframe computer.<br>
+                Wikipedia. (2024). Microcomputer.<br>
+                Wikipedia. (2024). Minicomputer.<br>
+                Wikipedia. (2024). Server (computing).<br>
+                Wikipedia. (2024). Supercomputer.<br>
+                </p>
+                Corsair. (n.d.). ATX vs Micro-ATX vs Mini-ITX: What’s the difference? Corsair<BR>
+                <a href="/PDF FILES/BAGUIO_20Study20Different20of%20Computers.pdf" rel="noopener" class="text-accent-green">Download PDF</a>
+                <a href="/PDF FILES/BAGUIO_20Study20Different20of%20Computers.pdf" target="_blank" rel="noopener" class="text-accent-green">More references</a>
+
+                </p>
+        </div>
+
+</body>
+</html>

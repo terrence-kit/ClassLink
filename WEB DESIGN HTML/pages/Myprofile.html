@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile View</title>
+    
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'base-dark': '#0b0f0b',         
+                        'surface-dark': '#111a11',      
+                        'accent-green': '#39ff14',       
+                        'hover-green': '#2dd10f',       
+                        'text-grey': '#9caea8',
+                        'section-line': '#1f2f1f',
+                    },
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #000;
+        }
+        
+        /* MAKING EACH SECTION*/
+        .section-divider {
+            border-bottom: 1px solid var(--tw-colors-section-line);
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        /* SKILLS SECTION */
+        .skill-tag {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.3rem 0.75rem;
+            border-radius: 9999px;
+            background-color: #0f1a0f;
+            border: 1px solid #1c3d1c;
+            color: #37a823;
+            font-size: 0.875rem;
+            font-weight: 500;
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+            box-shadow: 0 2px 4px rgba(0, 255, 0, 0.3);
+        }
+
+        .skill-tag:hover {
+            background-color: #145e07;
+            color: #063506;
+            border-color: #092c03;
+            transform: translateY(-1px) scale(1.03);
+            box-shadow: 0 4px 10px rgba(20, 92, 7, 0.6);
+        }
+    </style>
+</head>
+
+<body class="bg-base-dark text-gray-200 min-h-screen p-4 md:p-12">
+
+    <!-- THE PROFILE SECTION-->
+    <div class="max-w-5xl mx-auto bg-surface-dark p-6 md:p-10 rounded-xl shadow-2xl shadow-black/50 border border-accent-green/50">
+
+        <!-- TITLE HEADER -->
+        <header class="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-8 pb-4">
+            
+            <!-- MY PICTURE -->
+            <div class="flex-shrink-0 w-36 h-36 bg-base-dark rounded-lg border-2 border-accent-green shadow-lg shadow-accent-green/30 flex items-center justify-center overflow-hidden">
+            <img src="/images/profile_pic_temp3.jpg" alt="Profile Picture" class="w-full h-full object-cover">
+            </div>
+
+
+            <!-- Name / Title -->
+            <div class="flex-grow">
+                <h1 class="text-5xl font-extrabold text-white uppercase tracking-wider mb-2">FULL NAME</h1>
+                
+                <p class="text-md font-light text-accent-green/80 mb-4">
+                    C PROGRAMMER • LOGICAL THINKER • CIS 1102N COHORT
+                </p>
+                
+                <!-- Tags -->
+                <div class="flex flex-wrap gap-3">
+                    <span class="skill-tag">WEB DESIGN</span>
+                    <span class="skill-tag">INTROVERT</span>
+                    <span class="skill-tag">ENTP-A</span>
+                    <span class="skill-tag">PYTHON</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- CONTENT -->
+        <div class="mt-6">
+
+            <!-- BASIC INFO -->
+            <h2 class="text-3xl font-bold text-white mb-2">Basic Information</h2>
+            <div class="section-divider"></div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-4 text-sm">
+                <div>
+                    <span class="font-medium text-text-grey">Preferred name:</span>
+                    <span class="block text-lg text-gray-300">Terrence</span>
+                </div>
+                <div>
+                    <span class="font-medium text-text-grey">Email:</span>
+                    <span class="block text-lg text-gray-300">terrence.baguio@classlink.edu</span>
+                </div>
+                <div>
+                    <span class="font-medium text-text-grey">Phone:</span>
+                    <span class="block text-lg text-gray-300">09-123-456-789</span>
+                </div>
+                <div>
+                    <span class="font-medium text-text-grey">Birthdate:</span>
+                    <span class="block text-lg text-gray-300">October 35, 2025</span>
+                </div>
+            </div>
+
+            <!-- CODING SKILLS -->
+            <h2 class="text-3xl font-bold text-white mt-10 mb-2">Coding Skills</h2>
+            <div class="section-divider"></div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-4 text-sm">
+                <div>
+                    <span class="font-medium text-text-grey">choosen area</span>
+                    <span class="block text-lg text-gray-300">Web Development</span>
+                </div>
+                <div>
+                    <span class="font-medium text-text-grey">Role Focus:</span>
+                    <span class="block text-lg text-gray-300">Front End Development</span>
+                </div>
+                <div class="md:col-span-2">
+                    <span class="font-medium text-text-grey">Other Skills:</span>
+                    <span class="block text-lg text-gray-300">HTML/CSS (Tailwind), Python, Git, C#, SQL</span>
+                </div>
+                <div class="md:col-span-2">
+                    <span class="font-medium text-text-grey block mb-2">Confidence Level:</span>
+                    <div class="w-full bg-gray-700 rounded-full h-3">
+                        <div class="bg-accent-green h-3 rounded-full" style="width: 50%"></div>
+                    </div>
+                    <span class="text-xs text-text-grey mt-1">50% Confidene level</span>
+                </div>
+            </div>
+
+            <!-- HEALTH -->
+            <h2 class="text-2xl font-bold text-white mt-8 mb-2">Health & Wellness</h2>
+            <div class="section-divider"></div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-4 text-sm">
+                <div>
+                    <span class="font-medium text-text-grey">Known Allergies:</span>
+                    <span class="block text-lg text-gray-300">Smart People who acts stupid</span>
+                </div>
+                <div>
+                    <span class="font-medium text-text-grey">Emergency Contact:</span>
+                    <span class="block text-lg text-gray-300">Still me (09-123-456-789)</span>
+                </div>
+            </div>
+            
+            <!-- ROUTINE -->
+            <h2 class="text-2xl font-bold text-white mt-8 mb-2">Routine & Availability</h2>
+            <div class="section-divider"></div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-4 text-sm">
+                <div class="md:col-span-2">
+                    <span class="font-medium text-text-grey">Work/Study Routine:</span>
+                    <span class="block text-lg text-gray-300 italic">So I wake up then clean for 10 min, after that<br>
+                                                                    I get ready (sometimes I eat) then I walk towards<br>
+                                                                    the hightway and then wait for the bus the school<br>
+                                                                    while doing that I just play a vid //usually cooking vids//<br>
+                                                                    and when I get to school, obv I go to sschool and i don't<br>
+                                                                    check my phone so you don't get a reply to me when you <br>
+                                                                    send me a text between 6:00 am to  8:00 pm."</span>
+                </div>
+                <div>
+                    <span class="font-medium text-text-grey">Time Zone:</span>
+                    <span class="block text-lg text-gray-300"> Filipino time </span>
+                </div>
+            </div>
+
+            <!-- ABILITIES -->
+            <h2 class="text-2xl font-bold text-white mt-8 mb-2">Abilities & Strengths</h2>
+            <div class="section-divider"></div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-4 text-sm">
+                <div>
+                    <span class="font-medium text-text-grey">Core Strengths:</span>
+                    <span class="block text-lg text-gray-300">Problem Solving, Team Leadership, Documentation Quality.</span>
+                </div>
+                <div>
+                    <span class="font-medium text-text-grey">Areas of Interest:</span>
+                    <span class="block text-lg text-gray-300">Web Accessibility, Data Visualization, Game Development.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

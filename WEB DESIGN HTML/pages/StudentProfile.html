@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Set-Up</title>
+
+    <!-- TAILWIND -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        /* DARK, NEUTRAL, EARTHY GREEN PALETTE */
+                        "green-bg": "#0d1110",              /* background (charcoal green) */
+                        "green-surface": "#141a18",         /* surface box */
+                        "green-border": "#1d2422",          /* border subtle */
+                        "green-accent": "#4a7c59",          /* main accent green */
+                        "green-accent-light": "#6fa07c",    /* lighter hover */
+                        "green-muted": "#a7b0a8",           /* muted grey-green text */
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: "Inter", sans-serif;
+            background: url("/images/GreenColorBG.png") no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        /* Input + select + textarea borders on focus (refined green tone) */
+        .input-focus:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px #4a7c59;
+            border-color: #4a7c59;
+        }
+
+        /* Accent color for checkbox + radio */
+        input[type="checkbox"].accent-green,
+        input[type="radio"].accent-green {
+            accent-color: #4a7c59;
+        }
+    </style>
+</head>
+
+<body class="text-green-muted p-4 md:p-8 min-h-screen">
+
+    <div class="max-w-4xl mx-auto py-8">
+
+        <!-- TITLE -->
+        <h1 class="text-4xl md:text-5xl font-extrabold text-center mb-10 tracking-wider 
+                   text-green-accent uppercase border-b-4 border-green-accent pb-4">
+            PROFILE SET-UP
+        </h1>
+
+        <!-- MAIN FORM -->
+        <form class="space-y-10 bg-green-surface p-8 md:p-10 rounded-xl shadow-xl border border-green-border">
+
+            <!-- PERSONAL DATA -->
+            <fieldset class="border border-green-border p-6 rounded-lg space-y-6">
+                <legend class="text-lg mb-2 font-bold text-green-accent">Personal Data</legend>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm mb-1">Full Name</label>
+                        <input type="text" placeholder="Terrence Doe"
+                        class="w-full p-3 rounded-md bg-green-bg border border-green-border text-white
+                               placeholder-green-muted input-focus">
+                    </div>
+
+                    <div>
+                        <label class="block text-sm mb-1">Preferred Name</label>
+                        <input type="text" placeholder="Terrence"
+                        class="w-full p-3 rounded-md bg-green-bg border border-green-border text-white 
+                               placeholder-green-muted input-focus">
+                    </div>
+
+                    <div>
+                        <label class="block text-sm mb-1">Email</label>
+                        <input type="email" placeholder="Terrence@ClassLink.com"
+                        class="w-full p-3 rounded-md bg-green-bg border border-green-border text-white
+                               placeholder-green-muted input-focus">
+                    </div>
+
+                    <div>
+                        <label class="block text-sm mb-1">Phone Number</label>
+                        <input type="tel" placeholder="09-123-456-789"
+                        class="w-full p-3 rounded-md bg-green-bg border border-green-border text-white 
+                               placeholder-green-muted input-focus">
+                    </div>
+
+                    <div>
+                        <label class="block text-sm mb-1">Birthday</label>
+                        <input type="date"
+                        class="w-full p-3 rounded-md bg-green-bg border border-green-border text-white 
+                               input-focus">
+                    </div>
+
+                    <!-- Upload Button -->
+                    <div class="flex flex-col">
+                        <label class="block text-sm mb-1">Profile Photo</label>
+                        <label class="px-4 py-2 rounded-md cursor-pointer 
+                                       bg-green-border text-green-muted 
+                                       hover:bg-green-accent hover:text-green-bg transition">
+                            Upload File
+                            <input type="file" class="hidden">
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- CODING SKILLS -->
+            <fieldset class="border border-green-border p-10 rounded-lg space-y-3">
+                <legend class="text-lg mb-2 font-bold text-green-accent">Coding Skills</legend>
+
+                <p class="text-sm">Choose languages you know</p>
+
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4 text-sm">
+                    <label class="flex items-center gap-2"><input type="checkbox" class="accent-green">C</label>
+                    <label class="flex items-center gap-2"><input type="checkbox" class="accent-green">C++</label>
+                    <label class="flex items-center gap-2"><input type="checkbox" class="accent-green">Python</label>
+                    <label class="flex items-center gap-2"><input type="checkbox" class="accent-green">Java</label>
+                    <label class="flex items-center gap-2"><input type="checkbox" class="accent-green">JavaScript</label>
+                    <label class="flex items-center gap-2"><input type="checkbox" class="accent-green">HTML/CSS</label>
+                    <label class="flex items-center gap-2"><input type="text" class="w-full bg-green-bg border border-green-border rounded-md p-2 text-white">others</label>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block mb-1 text-sm">Primary Language</label>
+                        <select class="w-full p-3 rounded-md bg-green-bg border   border-green-border text-white input-focus">
+                            <option>-- Select --</option>
+                            <option>Python</option>
+                            <option>JavaScript</option>
+                            <option>Java</option>
+                            <option>C++</option>
+                        </select>
+                    </div>
+
+                    <div class="flex items-end gap-6">
+                        <label class="flex items-center gap-2"><input type="radio" name="role" class="accent-green">Front End</label>
+                        <label class="flex items-center gap-2"><input type="radio" name="role" class="accent-green">Back End</label>
+                        <label class="flex items-center gap-2"><input type="radio" name="role" class="accent-green">Full Stack</label>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="mb-2 text-sm">Coding Confidence</p>
+                    <input type="range" class="w-full accent-green">
+                </div>
+            </fieldset>
+
+            <!-- HEALTH -->
+            <fieldset class="border border-green-border p-6 rounded-lg space-y-4">
+                <legend class="text-lg mb-2 font-bold text-green-accent">Health & Wellness</legend>
+
+                <div>
+                    <label class="block mb-1 text-sm">Allergies</label>
+                    <textarea rows="2" class="w-full p-3 rounded-md bg-green-bg border border-green-border text-white 
+                                          placeholder-green-muted input-focus"></textarea>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block mb-1 text-sm">Emergency Contact</label>
+                        <input type="text" class="w-full p-3 rounded-md bg-green-bg border border-green-border text-white 
+                               placeholder-green-muted input-focus">
+                    </div>
+                    <div>
+                        <label class="block mb-1 text-sm">Emergency Phone</label>
+                        <input type="tel" class="w-full p-3 rounded-md bg-green-bg border border-green-border text-white 
+                               placeholder-green-muted input-focus">
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- ROUTINE -->
+            <fieldset class="border border-green-border p-6 rounded-lg space-y-4">
+                <legend class="text-lg mb-2 font-bold text-green-accent">Daily Routine</legend>
+
+                <label class="block mb-1 text-sm">Describe your routine</label>
+                <textarea rows="3" class="w-full p-3 rounded-md bg-green-bg border border-green-border text-white 
+                                      placeholder-green-muted input-focus"></textarea>
+
+                <label class="block mb-1 text-sm">Time Zone</label>
+                <select class="w-full p-3 rounded-md bg-green-bg border border-green-border text-white input-focus">
+                    <option>Select…</option>
+                    <option>PST</option>
+                    <option>EST</option>
+                    <option>GMT</option>
+                    <option>JST</option>
+                </select>
+            </fieldset>
+
+            <!-- STRENGTHS -->
+            <fieldset class="border border-green-border p-6 rounded-lg space-y-4">
+                <legend class="text-lg mb-2 font-bold text-green-accent">Strengths</legend>
+
+                <label class="block mb-1 text-sm">3 Core Strengths</label>
+                <textarea rows="3" class="w-full p-3 rounded-md bg-green-bg border border-green-border text-white input-focus"></textarea>
+
+                <label class="block mb-1 text-sm">Project Interests</label>
+                <input type="text" class="w-full p-3 rounded-md bg-green-bg border border-green-border text-white 
+                       placeholder-green-muted input-focus">
+            </fieldset>
+
+            <!-- SUBMIT -->
+            <button class="w-full py-4 bg-green-accent text-green-bg font-bold rounded-md 
+                           hover:bg-green-accent-light transition">
+                Save Profile
+            </button>
+
+        </form>
+    </div>
+
+</body>
+</html>

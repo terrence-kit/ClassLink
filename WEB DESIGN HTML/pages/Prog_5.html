@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Green Presentation Template</title>
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'base-dark': '#0d1110',        
+                        'surface-dark': '#141a18',    
+                        'accent-green': '#4a7c59',    
+                        'accent-green-light': '#6fa07c',
+                        'text-grey': '#a7b0a8',       
+                        'section-line': '#1d2422'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: "Inter", sans-serif;
+        }
+
+        .content-box {
+            background-color: var(--tw-colors-surface-dark);
+            border: 1px solid var(--tw-colors-section-line);
+            border-radius: 0.8rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(5, 10, 8, 0.5);
+        }
+
+        .content-box-hover:hover {
+            border-color: var(--tw-colors-accent-green);
+            box-shadow: 0 4px 15px rgba(40, 65, 50, 0.4);
+            transform: translateY(-2px);
+        }
+    </style>
+
+</head>
+
+<body class="bg-base-dark text-gray-100 min-h-screen p-4 md:p-12">
+
+    <div class="max-w-7xl mx-auto space-y-6">
+
+        <!-- Header -->
+        <div class="content-box p-6 h-36 flex items-center justify-center border-accent-green">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-accent-green tracking-widest uppercase">
+            MOTHERBOARDS</h1>
+        </div>
+
+
+        <!-- Box 1 -->
+        <div class="content-box content-box-hover p-8 h-100 flex flex-col items-center justify-center text-center">
+            <h2 class="text-3xl font-bold text-white mb-10">INTRODUCTION</h2>
+            <p class="text-text-grey text-lg max-w-3xl">
+            <BR>The primary circuit board of a computer system is called the motherboard. It links all of
+            the internal parts, including the processor, graphics card, memory, and other hardware.
+            Additionally, it gives each component power and enables communication between them. It is
+            impossible to overestimate the significance of the motherboard as a crucial component of any
+            computer. In essence, bringing all of the various parts of a computer together is the
+            motherboard's job. From USB ports to RAM, it contains connectors for almost every kind of
+            component. Your computer can perform the tasks you want it to by connecting these parts
+            together, which enables communication between them.<br>
+            The majority of motherboards nowadays have a few standard parts. The Central
+            Processing Unit (CPU), Graphics Processing Unit (GPU), Random Access Memory (RAM),
+            Read Only Memory (ROM), and Southbridge chipsets are among them. Furthermore, some
+            motherboards come equipped with extra functions like onboard audio processors and Ethernet or
+            FireWire connectors.
+
+            </p>
+        </div>
+
+        <!-- box 2 -->
+         <div class="content-box content-box-hover p-8 h-100 flex flex-col items-center justify-center text-center">
+            <h2 class="text-3xl font-bold text-white mb-10">DISCUSSION</h2>
+            <p class="text-text-grey text-lg max-w-3xl">
+            <BR>A motherboard doesn't seem like a "performance" component like a CPU or graphics
+            card at first glance. According to what I understand, the function is to connect the different
+            hardware components and provide a few USB and other interface ports on the rear. Therefore,
+            any motherboard that supported the socket of my CPU seemed to be just as good as any other
+            when it came to motherboard purchases. What distinguishes them from one another exactly?
+            When deciding if a motherboard will meet my needs, what should I check for?
+            </p>
+        </div>
+
+        <!-- box 3 -->
+
+        <div class="content-box content-box-hover p-8 h-100 flex flex-col items-center justify-center text-center">
+            <h2 class="text-3xl font-bold text-white mb-10">THESE ARE THE ASPECT OF A MOTHERBOARD DEPENDING ON USES</h2>
+
+        <!-- Boxes 4 & 5 -->
+        <div class="flex gap-10">
+
+    
+            <!-- Box 4 -->
+            <div class="content-box content-box-hover p-10 h-100 flex flex-col items-center justify-center text-justified flex-1">
+                <h2 class="text-3xl font-bold text-white mb-10 text-center">BUILT</h2>
+                <p class="text-text-grey text-lg max-w-3xl text-justify">
+               Means that capabilities like Bluetooth, Wi-Fi, and enhanced audio are integrated right
+                into the board, eliminating the need for additional expansion cards. In contrast, a motherboard
+                necessitates the installation of these components via PCIe slots.
+
+            </div>
+            
+            <!-- Box 5 -->
+            <div class="content-box content-box-hover p-10 h-100 flex flex-col items-center justify-center text-justified flex-1">
+                <h2 class="text-3xl font-bold text-white mb-10 text-center">CPU SLOTS</h2>
+                <p class="text-text-grey text-lg max-w-3xl text-justify">
+                The CPU socket, a connector that physically and electrically joins the central processing
+                unit (CPU) to the motherboard, is known as the "CPU slot" on a motherboard. It has a certain pin
+                or contact pattern that needs to match the CPU being installed and enables communication
+                between the CPU and other parts like memory and storage.
+                </p>
+            </div>
+        </div>
+
+            <!-- Boxes 6 & 7 -->
+        <div class="flex gap-10">
+
+    
+            <!-- Content Box 6 -->
+            <div class="content-box content-box-hover p-10 h-100 flex flex-col items-center justify-center text-justified flex-1">
+                <h2 class="text-3xl font-bold text-white mb-10 text-center">MEMORY SLOTS</h2>
+                <p class="text-text-grey text-lg max-w-3xl text-justify">
+                Are actual motherboard connectors where RAM (Random-Access Memory) modules,
+                also known as memory sticks or DIMMs, are inserted. They serve as a link between the
+                computer's processor and RAM, enabling the system to store and retrieve data rapidly and
+                efficiently for program execution. These slots' quantity and color might reveal the kind of RAM
+                that is supported as well as how to set up modules for optimal performance, like dual-channel
+                configuration.
+
+                </p>
+            </div>
+            
+            <!-- Content Box 7 -->
+            <div class="content-box content-box-hover p-10 h-100 flex flex-col items-center justify-center text-justified flex-1">
+                <h2 class="text-3xl font-bold text-white mb-10 text-center">CHIP SLOT</h2>
+                <p class="text-text-grey text-lg max-w-3xl text-justify">
+                Is a group of integrated circuits that controls how information moves between the
+                peripherals, memory, and processor. It plays an essential role in system performance by serving
+                as the main hub for communication between all of the board's components and the CPU.
+
+                </p>
+            </div>
+        </div>
+
+        <!--- BOX 8 & 9 -->
+        <div class="flex gap-10">
+
+    
+            <!-- Box 8 -->
+            <div class="content-box content-box-hover p-10 h-100 flex flex-col items-center justify-center text-justified flex-1">
+                <h2 class="text-3xl font-bold text-white mb-10 text-center">BIOS</h2>
+                <p class="text-text-grey text-lg max-w-3xl text-justify">
+                Stands for Basic Input/Output System, the motherboard firmware that is activated when
+                the computer is turned on. Initializing and testing the system hardware, loading the operating
+                system from the hard drive, and controlling data flow between the OS and linked devices are its
+                primary duties.
+
+                </p>
+            </div>
+            
+            <!-- Box 9 -->
+            <div class="content-box content-box-hover p-10 h-100 flex flex-col items-center justify-center text-justified flex-1">
+                <h2 class="text-3xl font-bold text-white mb-10 text-center">PCI SLOTS</h2>
+                <p class="text-text-grey text-lg max-w-3xl text-justify">
+                PCI slots are motherboard expansion slots that let you install additional hardware cards,
+                such as network, sound, or even older graphics cards, to increase a computer's capability. By
+                acting as a standardized interface, they enable the installation of different expansion cards to
+                enhance or add new features to the system. The primary function of old PCI is still to link
+                peripheral components, even though it is largely obsolete and has been replaced by the quicker
+                PCI Express (PCIe) standard.
+
+                </p>
+            </div>
+
+            <!--- BOX 10 -->
+            </div>
+             <div class="content-box content-box-hover p-10 h-100 flex flex-col items-center justify-center text-justified flex-1">
+                <h2 class="text-3xl font-bold text-white mb-10 text-center">SATA</h2>
+                <p class="text-text-grey text-lg max-w-3xl text-justify">
+                Is a computer bus interface that connects mass storage devices, such as solid-state drives
+                (SSDs) and hard drives (HDDs), to a computer's motherboard. It stands for Serial Advanced
+                Technology Attachment. With advantages including higher data transfer speeds and thinner,
+                more flexible connections, it has largely superseded the outdated Parallel ATA (PATA) standard
+                and is the most widely used interface for consumer-grade storage devices.
+
+            </p>
+            <!-- box 11 -->
+        </div>
+                <div class="content-box p-8 mt-6">
+                <img src="/images/Screenshot 2025-12-04 003549.png" alt="Motherboard" class="w-full h-auto rounded-lg">
+                </div>
+        </div>
+        <!-- box 12-->
+        <div class="content-box content-box-hover p-10 h-100 flex flex-col items-center justify-center text-justified flex-1">
+                <h2 class="text-3xl font-bold text-white mb-10">REFERENCES</h2>
+                <p class="text-text-grey text-lg max-w-3xl text-justify">
+                <BR>Lenovo. (n.d.). What does a motherboard do? Lenovo Philippines<BR>
+                SuperUser. (2020, August 22). How do modern motherboards differ from each other?<BR>
+                TechTarget. (n.d.). Motherboard definition. TechTarget:<BR>
+                Wikipedia. (2024, June 15). CPU socket. In Wikipedia.<BR>
+                SuperUser. (2013, October 24). What do motherboard RAM slot colors mean?<BR>
+                HP. (2023, May 5). What is a chipset? HP® Tech Takes.<BR>
+                TechTarget. (2020, November 3). BIOS (basic input/output system) definition. TechTarget: WhatIs.<BR>
+                Wikipedia. (2024, May 22). Peripheral Component Interconnect.<BR>
+                Lenovo. (n.d.). What is Serial Advanced Technology<BR>
+                Corsair. (n.d.). ATX vs Micro-ATX vs Mini-ITX: What’s the difference? Corsair<BR>
+                <a href="/PDF FILES/BaguioTer-G3-CIS1102N-Portfolio5.pdf" rel="noopener" class="text-accent-green">Download PDF</a>
+                <a href="/PDF FILES/BaguioTer-G3-CIS1102N-Portfolio5.pdf" target="_blank" rel="noopener" class="text-accent-green">More references</a>
+
+                </p>
+    
+        
+
+        
+        
+       
+
+    
+
+</body>
+</html>

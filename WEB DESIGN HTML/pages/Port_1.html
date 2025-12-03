@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Green Presentation Template</title>
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'base-dark': '#0d1110',       
+                        'surface-dark': '#141a18',    
+                        'accent-green': '#4a7c59',     
+                        'accent-green-light': '#6fa07c',
+                        'text-grey': '#a7b0a8',        
+                        'section-line': '#1d2422'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: "Inter", sans-serif;
+        }
+
+        .content-box {
+            background-color: var(--tw-colors-surface-dark);
+            border: 1px solid var(--tw-colors-section-line);
+            border-radius: 0.8rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(5, 10, 8, 0.5);
+        }
+
+        .content-box-hover:hover {
+            border-color: var(--tw-colors-accent-green);
+            box-shadow: 0 4px 15px rgba(40, 65, 50, 0.4);
+            transform: translateY(-2px);
+        }
+    </style>
+
+</head>
+
+<body class="bg-base-dark text-gray-100 min-h-screen p-4 md:p-12">
+
+    <div class="max-w-7xl mx-auto space-y-6">
+
+        <!-- Header -->
+        <div class="content-box p-6 h-36 flex items-center justify-center border-accent-green">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-accent-green tracking-widest uppercase">
+                THE DISCIPLINE OF COMPUTER SCIENCE
+            </h1>
+        </div>
+
+
+        
+        <!-- Box 1 -->
+        <div class="content-box content-box-hover p-8 h-100 flex flex-col items-center justify-center text-justified">
+            <h2 class="text-3xl font-bold text-white mb-10">INTRODUCTION TO CS</h2>
+            <p class="text-text-grey text-lg max-w-3xl">
+                Computer Science is the study of computation, systems, and problem-solving using technology. It encompasses:<br>
+                <br>-    Practice
+                <br>-    Applications
+                <br>-    Design and development <br><br>
+                CS matters because it drives innovation and supports everyday life. Powers modern industries, Solves real-world problems, Shapes the digital future
+
+
+            </p>
+        </div>
+
+        <!-- Box 2 -->
+        <div class="content-box content-box-hover p-8 h-8- flex flex-col items-center justify-center text-center">
+            <h2 class="text-3xl font-bold text-white mb-3">5 COMPUTING DISCIPLINES AND MAJORS</h2>
+            <p class="text-text-grey text-lg max-w-3xl">
+                <br>Computer Engineering<br>
+                <br>Computer Science<br>
+                <br>Information Systems<br>
+                <br>Information Technology<br>
+                <br>Software Engineering<br>
+
+            </p>
+        </div>
+
+
+        <!-- Boxes 3 & 4 -->
+        <div class="flex gap-10">
+
+    
+            <!--  Box 3 -->
+            <div class="content-box content-box-hover p-10 h-100 flex flex-col items-center justify-center text-justified flex-1">
+                <h2 class="text-3xl font-bold text-white mb-10">COMPUTER ENGINEERING</h2>
+                <p class="text-text-grey text-lg max-w-3xl text-justify">
+                Computer engineers design hardware focusing on its purpose, rather than the details of transistor layout. They create processors for systems of all sizes, whether they resemble computers or not. 
+
+                <br><br><br>Computer Engineers connect hardware and software to make technology work seamlessly.
+                They power innovations like self-driving cars, robotics, and smart devices.
+                Everyday gadgets from phones to Wi-Fi depend on Computer Engineering.
+                They design reliable systems for space, defense, and extreme environments.
+                The field evolves rapidly, shaping quantum computing and future tech.
+                </p>
+            </div>
+            
+            <!--  Box 4 -->
+            <div class="content-box content-box-hover p-10 h-100 flex flex-col items-center justify-center text-justified flex-1">
+                <h2 class="text-3xl font-bold text-white mb-10">COMPUTER SCIENCE</h2>
+                <p class="text-text-grey text-lg max-w-3xl text-justify">
+                Computer science is the study of computers, their theoretical foundations, hardware and software, and information processing. It includes algorithms, data structures, network design, modeling, and artificial intelligence. Drawing from mathematics and engineering, it incorporates techniques like queueing theory, probability, statistics, and electronic circuit design. 
+
+                <br><br>
+                <br>Ada Lovelace is considered the world’s first programmer for writing an algorithm in the 1840s for Charles Babbage’s Analytical Engine.
+                The first computer bug was literally a moth found stuck in a Harvard Mark II computer in 1947.
+                The term “computer” originally referred to people (mostly women) who performed complex calculations by hand before machines took over.
+                The ENIAC (1945) was the first general-purpose electronic computer, and it was programmed by six women pioneers.
+                Email existed before the World Wide Web, with the first email sent by Ray Tomlinson in 1971.
+
+                </p>
+            </div>
+        </div>
+
+        <!-- Boxes 5 & 6 -->
+        <div class="flex gap-10">
+
+    
+            <!--  Box 5 -->
+            <div class="content-box content-box-hover p-10 h-100 flex flex-col items-center justify-center text-justified flex-1">
+                <h2 class="text-3xl font-bold text-white mb-10">INFORMATION SYSTEM</h2>
+                <p class="text-text-grey text-lg max-w-3xl text-justify">
+                Information systems are essential for businesses to manage operations, interact with customers and suppliers, and compete in the marketplace. They collect, store, and process data, provide knowledge, and offer digital products, with many major companies built around them. 
+
+                <br><br>
+                <br> - 1950s: Computers first used for business tasks.
+                <br> - 1960s: Birth of Management Information Systems (MIS)
+                <br> - 1990s: ERP systems integrated company operations.
+                <br> - 1990s: Internet made IS global.
+                <br> - 2000s: Big Data and Cloud reshaped IS.
+
+                </p>
+            </div>
+            
+            <!-- Box 6 -->
+            <div class="content-box content-box-hover p-10 h-100 flex flex-col items-center justify-center text-justified flex-1">
+                <h2 class="text-3xl font-bold text-white mb-10">INFORMATION TECHNOLOGY</h2>
+                <p class="text-text-grey text-lg max-w-3xl text-justify">
+                Information technology (IT) utilizes computers, storage, networking, and infrastructure to create, process, store, secure, and exchange electronic data, typically used in business operations. 
+
+                <br><br>
+                <br> - The first 1GB hard drive in 1980 weighed over 500 pounds.
+                <br> - There are more devices connected to the internet than people on Earth.
+                <br> - -The first website ever created is still online (info.cern.ch).
+                <br> - Over 90% of the world’s data was created in just the last two years.
+                <br> - IT is one of the fastest-growing job fields worldwide.
+
+                </p>
+            </div>
+        </div>
+        
+        <div class="content-box content-box-hover p-10 h-100 flex flex-col items-center justify-center text-justified flex-1">
+                <h2 class="text-3xl font-bold text-white mb-10">SOFTWARE ENGINEERING</h2>
+                <p class="text-text-grey text-lg max-w-3xl text-justify">
+                Software engineering is a computer science field that involves designing, developing, testing, and maintaining software applications, including games, business applications, operating systems, and middleware, using programming languages. 
+
+                <br><br>
+                <br>The term “Software Engineering” was first used in 1968 at a NATO conference.
+                The first software engineers were mostly mathematicians and scientists.
+                NASA used early software engineering methods to land Apollo 11 on the moon.
+                Open-source software (like Linux) changed the way software is built and shared.
+                Agile and DevOps transformed software development into faster, flexible cycles.
+
+                </p>
+        </div>
+
+        <div class="content-box content-box-hover p-10 h-100 flex flex-col items-center justify-center text-justified flex-1">
+                <h2 class="text-3xl font-bold text-white mb-10">REFERENCES</h2>
+                <p class="text-text-grey text-lg max-w-3xl text-justify">
+                <br>Michigan Technological University. (n.d.). What is Computer Engineering? Retrieved from https://www.mtu.edu/ece/undergraduate/computer/what-is/ Michigan Technological University
+                <br>Coursera Staff. (2024, December 2). What Is a Computer Engineer? 2025 Career Guide. Retrieved from https://www.coursera.org/articles/computer-engineer Coursera
+                <br>Tucker, A. (2025, September 3). Computer science | Definition, Types, & Facts. In Britannica. Retrieved from https://www.britannica.com/science/computer-science Encyclopedia Britannica
+                <br>Zwass, V. (2025, August 29). Information system | Definition, Examples, & Facts. In Britannica. Retrieved from https://www.britannica.com/topic/information-system Encyclopedia Britannica
+                <br>TechTarget. (n.d.). What is Information Technology? Retrieved from https://www.techtarget.com/searchdatacenter/definition/IT TechTarget
+                <br>Michigan Technological University. (n.d.). What is Software Engineering? Retrieved from The term “Software Engineering” was first used in 1968 at a NATO conference.
+
+                </p>
+        </div>
+
+        
+       
+
+    </div>
+
+</body>
+</html>

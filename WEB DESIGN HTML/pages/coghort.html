@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cohort Directory - Portfolio Topics</title>
+    
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+
+                    colors: {
+                        'base-dark': '#0f1a14',       
+                        'surface-dark': '#13241c',     
+                        'accent-green': '#4ade80',     
+                        'accent-green-dark': '#22c55e',
+                        'text-grey': '#9db8a6',
+                    },
+                    boxShadow: {
+                        'glow-green': '0 0 18px rgba(74, 222, 128, 0.6)',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-size: cover;
+            color: #d4ffd9;
+        }
+
+        /* THE FILTER BOX DESIGN*/
+        select {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%234ade80'%3E%3Cpath fill-rule='evenodd' d='M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z' clip-rule='evenodd' /%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 0.75rem center;
+            background-size: 1.5em 1.5em;
+        }
+
+        /* 2ND BOX (PORTFOLIOS) */
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 8px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #13241c;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #2e3f36;
+            border-radius: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #4ade80;
+        }
+    </style>
+</head>
+
+<body class="bg-base-dark text-gray-200 min-h-screen p-4 md:p-12">
+
+    <!-- MAIN BOX -->
+    <div class="max-w-6xl mx-auto bg-surface-dark/80 backdrop-blur-md p-6 md:p-10 rounded-xl shadow-2xl shadow-black/60 border border-green-500/30">
+
+        <!-- TITLE OF THE PAGE -->
+        <header class="mb-8">
+            <h1 class="text-3xl md:text-4xl font-extrabold text-accent-green uppercase tracking-widest drop-shadow-[0_0_8px_rgba(74,222,128,0.7)]">
+                COHORT DIRECTORY
+            </h1>
+            <p class="text-text-grey mt-2">Browse all CIS 1102N. Use search and filtering to find topics quickly.</p>
+        </header>
+
+        <!-- NON WORKING SEARH BAR AND THE FILTER STUFF -->
+        <div class="flex flex-col md:flex-row gap-4 mb-8">
+            <div class="relative flex-grow">
+                <input type="text" placeholder="SEARCH BAR"
+                    class="w-full p-3 pl-4 rounded-lg bg-base-dark border border-green-500/20 text-gray-100
+                           placeholder-text-grey focus:outline-none focus:ring-2 focus:ring-accent-green 
+                           shadow-inner hover:shadow-glow-green transition duration-300">
+            </div>
+
+            <div class="w-full md:w-64 relative">
+                <select class="w-full p-3 rounded-lg bg-base-dark border border-green-500/20 text-gray-100
+                                focus:outline-none focus:ring-2 focus:ring-accent-green transition duration-300
+                                pr-10 cursor-pointer">
+                    <option disabled selected>FILTER BY SKILL</option>
+                    <option>Converion</option>
+                    <option>Number System (Frontend)</option>
+                    <option>CSS</option>
+                    <option>HTML</option>
+                    <option>Networking</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- THE TABLE -->
+        <div class="custom-scrollbar overflow-y-scroll h-[60vh] border border-green-500/20 rounded-lg shadow-inner shadow-black/30">
+            <table class="min-w-full divide-y divide-green-500/20">
+                
+                <thead class="sticky top-0 bg-base-dark/90 backdrop-blur-md z-10 shadow-lg shadow-black/40">
+                    <tr>
+                        <th class="px-6 py-3 text-left text-xs font-bold text-accent-green uppercase tracking-wider cursor-pointer hover:bg-green-900/20 transition duration-150">
+                            <span class="flex items-center space-x-1">
+                                <span>TOPIC NO.</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-green-400" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M5 12a1 1 0 01-1-1V5a1 1 0 012 0v6a1 1 0 01-1 1zm8-8a1 1 0 00-1 1v6a1 1 0 002 0V5a1 1 0 00-1-1zm-4 4a1 1 0 01-1-1V5a1 1 0 012 0v6a1 1 0 01-1-1z" />
+                                </svg>
+                            </span>
+                        </th>
+
+                        <th class="px-6 py-3 text-left text-xs font-bold text-accent-green uppercase tracking-wider">
+                            TOPIC TITLE
+                        </th>
+
+                        <th class="px-6 py-3 text-left text-xs font-bold text-accent-green uppercase tracking-wider">
+                            LINK
+                        </th>
+                    </tr>
+                </thead>
+
+                <tbody class="divide-y divide-green-500/10 text-sm">
+
+
+                    <tr class="hover:bg-green-900/10 transition duration-150 group">
+                        <td class="px-6 py-4 font-medium text-gray-200">01</td>
+                        <td class="px-6 py-4 text-text-grey">Computer Science as Discipline, <br>Computing Disciplines and Majors</td>
+                        <td class="px-6 py-4">
+                            <a href="/pages/Port_1.html" class="text-accent-green hover:text-accent-green-dark hover:underline hover:shadow-glow-green transition duration-300 rounded-sm">View Portfolio</a>
+                        </td>
+                    </tr>
+
+                    <tr class="hover:bg-green-900/10 transition duration-150 group">
+                        <td class="px-6 py-4 font-medium text-gray-200">02</td>
+                        <td class="px-6 py-4 text-text-grey"> Data, Information,<br>and Information Systems</td>
+                        <td class="px-6 py-4">
+                            <a href="/pages/Port_2.html" class="text-accent-green hover:text-accent-green-dark hover:underline hover:shadow-glow-green transition duration-300 rounded-sm">View Portfolio</a>
+                        </td>
+                    </tr>
+
+                    <tr class="hover:bg-green-900/10 transition duration-150 group">
+                        <td class="px-6 py-4 font-medium text-gray-200">03</td>
+                        <td class="px-6 py-4 text-text-grey">Number System</td>
+                        <td class="px-6 py-4">
+                            <a href="/pages/Prog_3.html" class="text-accent-green hover:text-accent-green-dark hover:underline hover:shadow-glow-green transition duration-300 rounded-sm">View Portfolio</a>
+                        </td>
+                    </tr>
+
+                    <tr class="hover:bg-green-900/10 transition duration-150 group">
+                        <td class="px-6 py-4 font-medium text-gray-200">04</td>
+                        <td class="px-6 py-4 text-text-grey">Computer Hardware and Software:<br> Their Implementation in the different<br> institutions in the community 4</td>
+                        <td class="px-6 py-4">
+                            <a href="/pages/Prog_4.html" class="text-accent-green hover:text-accent-green-dark hover:underline hover:shadow-glow-green transition duration-300 rounded-sm">View Portfolio</a>
+                        </td>
+                    </tr>
+
+                    <tr class="hover:bg-green-900/10 transition duration-150 group">
+                        <td class="px-6 py-4 font-medium text-gray-200">05</td>
+                        <td class="px-6 py-4 text-text-grey">Comparative Study on Different Types <br>of Motherboards</td>
+                        <td class="px-6 py-4">
+                            <a href="/pages/Prog_5.html" class="text-accent-green hover:text-accent-green-dark hover:underline hover:shadow-glow-green transition duration-300 rounded-sm">View Portfolio</a>
+                        </td>
+                    </tr>
+
+                    <tr class="hover:bg-green-900/10 transition duration-150 group">
+                        <td class="px-6 py-4 font-medium text-gray-200">06</td>
+                        <td class="px-6 py-4 text-text-grey">Comparative Study on Different Types <br>of Motherboards</td>
+                        <td class="px-6 py-4">
+                            <a href="/pages/Prog_6.html" class="text-accent-green hover:text-accent-green-dark hover:underline hover:shadow-glow-green transition duration-300 rounded-sm">View Portfolio</a>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+</body>
+</html>

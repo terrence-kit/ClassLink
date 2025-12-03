@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Green Presentation Template</title>
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'base-dark': '#0d1110',       
+                        'surface-dark': '#141a18',     
+                        'accent-green': '#4a7c59',    
+                        'accent-green-light': '#6fa07c',
+                        'text-grey': '#a7b0a8',       
+                        'section-line': '#1d2422'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: "Inter", sans-serif;
+        }
+
+        .content-box {
+            background-color: var(--tw-colors-surface-dark);
+            border: 1px solid var(--tw-colors-section-line);
+            border-radius: 0.8rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(5, 10, 8, 0.5);
+        }
+
+        .content-box-hover:hover {
+            border-color: var(--tw-colors-accent-green);
+            box-shadow: 0 4px 15px rgba(40, 65, 50, 0.4);
+            transform: translateY(-2px);
+        }
+    </style>
+
+</head>
+
+<body class="bg-base-dark text-gray-100 min-h-screen p-4 md:p-12">
+
+    <div class="max-w-7xl mx-auto space-y-6">
+
+        <!-- Header -->
+        <div class="content-box p-6 h-36 flex items-center justify-center border-accent-green">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-accent-green tracking-widest uppercase">
+                NUMBER SYSTEM AND THEIR ROLE IN COMPUTING</h1>
+        </div>
+
+
+        <!--  Box 1 -->
+        <div class="content-box content-box-hover p-8 h-100 flex flex-col items-center justify-center text-center">
+            <h2 class="text-3xl font-bold text-white mb-10">WHAT IS DATA?</h2>
+            <p class="text-text-grey text-lg max-w-3xl">
+            <BR>is a systematic method for representing numbers using a specific
+            set of symbols or digits. It is essentially a mathematical notation for writing numbers in a
+            consistent manner. Every number system is defined by its base, or radix, which determines the
+            number of unique digits used to represent numbers. The value of a number is determined not
+            only by the digits themselves but also by their position within the number. This is known as a
+            positional numeral system, where the value of each digit is multiplied by a power of the base,
+            corresponding to its position.
+            While a countless number of systems can exist, four are fundamental in the fields of
+            mathematics and computer science: Decimal, Binary, Octal, and Hexadecimal.
+            </p>
+        </div>
+
+        <!--  Boxes 2 & 3  -->
+        <div class="flex gap-10">
+
+    
+            <!--  Box 2 -->
+            <div class="content-box content-box-hover p-10 h-100 flex flex-col items-center justify-center text-justified flex-1">
+                <h2 class="text-3xl font-bold text-white mb-10 text-center">DECIMAL NUMBER SYSTEM (Base-10)</h2>
+                <p class="text-text-grey text-lg max-w-3xl text-justify">
+                The decimal system is the most familiar number system used in our daily lives. It has a base of
+                10, meaning it uses ten unique digits: 0, 1, 2, 3, 4, 5, 6, 7, 8, and 9.
+
+                <br><br><br> <b>Uses and Significance:</b> Its universal adoption stems from the fact that humans have ten
+                fingers, making it a natural choice for counting and arithmetic. It is the standard for all common
+                calculations, from grocery bills to scientific measurements. Its significance lies in its intuitive
+                nature and universal use in human communication.
+            </div>
+            
+            <!-- Box 3 -->
+            <div class="content-box content-box-hover p-10 h-100 flex flex-col items-center justify-center text-justified flex-1">
+                <h2 class="text-3xl font-bold text-white mb-10 text-center">BINARY NUMBER SYSTEM (Base-2)</h2>
+                <p class="text-text-grey text-lg max-w-3xl text-justify">
+                The binary system has a base of 2 and uses only two digits: 0 and 1. In computing, these
+                digits are referred to as bits.
+                <br><br>
+                <br> <b>Uses and Significance:</b> This system is the fundamental language of all digital computers and
+                electronic devices. Computers operate using billions of tiny electronic switches called transistors,
+                which can only be in one of two states: ON (representing 1) or OFF (representing 0). All data,
+                whether it's text, images, or videos is ultimately broken down into long strings of these binary
+                digits. Its significance is paramount; without binary, modern digital computing would not exist.
+
+                </p>
+            </div>
+        </div>
+
+                <!-- Boxes 4 & 5 -->
+        <div class="flex gap-10">
+
+    
+            <!-- Box 4 -->
+            <div class="content-box content-box-hover p-10 h-100 flex flex-col items-center justify-center text-justified flex-1">
+                <h2 class="text-3xl font-bold text-white mb-10 text-center">OCTAL NUMBER SYSTEM (Base-8)</h2>
+                <p class="text-text-grey text-lg max-w-3xl text-justify">
+                The octal system has a base of 8, using the digits 0, 1, 2, 3, 4, 5, 6, and 7
+
+                <br><br><b>Uses and Significance:</b> Octal is primarily used as a more compact and human-readable way to
+                represent long binary numbers. Each octal digit corresponds to a unique group of three binary
+                digits . While less common today, it was widely used in early computing systems, particularly in
+                the aviation industry and on systems like the PDP-8. Its main significance was to simplify the
+                process of working with binary code for programmers.
+            </div>
+            
+            <!-- Box 5 -->
+            <div class="content-box content-box-hover p-10 h-100 flex flex-col items-center justify-center text-justified flex-1">
+                <h2 class="text-3xl font-bold text-white mb-10 text-center">HEXADECIMAL NUMBER SYSTEM (Base-16)</h2>
+                <p class="text-text-grey text-lg max-w-3xl text-justify">
+                The hexadecimal system has a base of 16. It uses the ten digits from the decimal system
+                (0-9) plus the first six letters of the alphabet (A, B, C, D, E, F) to represent the values 10 through
+                15           
+
+                <br><br> <b>Uses and Significant</b>:Like octal, hexadecimal is used to represent binary numbers more
+                concisely. Each hexadecimal digit corresponds to a unique group of four binary digits. It has
+                largely replaced octal in modern computing because a group of four bits (a nibble) and a group of
+                eight bits (a byte) are fundamental units of computer data.
+
+
+                </p>
+            </div>
+        </div>
+
+
+        <div class="content-box content-box-hover p-10 h-100 flex flex-col items-center justify-center text-justified flex-1">
+                <h2 class="text-3xl font-bold text-white mb-10">REFERENCES</h2>
+                <p class="text-text-grey text-lg max-w-3xl text-justify">
+                <br>Mano, M. M., & Ciletti, M. D. (2018). Digital Design: With an Introduction to the
+                Verilog HDL, VHDL, and SystemVerilog (6th ed.). Pearson Education.
+                <br> Patterson, D. A., & Hennessy, J. L. (2017). Computer Organization and Design: The
+                Hardware/Software Interface (5th ed.). Morgan Kaufmann Publishers.
+                <br> Knuth, D. E. (1997). The Art of Computer Programming, Volume 2: Seminumerical
+                Algorithms (3rd ed.). Addison-Wesley Professional.
+                <br> Stallings, W. (2019). Computer Organization and Architecture: Designing for
+                Performance (11th ed.). Pearson.
+                <br> Rosen, K. H. (2019). Discrete Mathematics and Its Applications (8th ed.). McGraw-Hill
+                Education.
+                <br>
+                <a href="/PDF FILES/BaguioTer-G3-CIS1102N-Portfolio3..pdf" rel="noopener" class="text-accent-green">Download PDF</a>
+                <a href="/PDF FILES/BaguioTer-G3-CIS1102N-Portfolio3..pdf" target="_blank" rel="noopener" class="text-accent-green">More references</a>
+
+                </p>
+        </div>
+
+        
+        
+       
+
+    </div>
+
+</body>
+</html>
